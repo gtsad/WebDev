@@ -311,7 +311,6 @@ All images are the same size because of fixed container dimension and 100% heigh
   margin-bottom: 20px;
 }
 
-
 /*Grid for items. Columns change for smaller or bigger screens wiht @media*/
 .items_grid {
   row-gap: 5rem;
@@ -324,7 +323,6 @@ All images are the same size because of fixed container dimension and 100% heigh
   text-align: left;
   margin-left: 10px;
 }
-
 
 /**Product card rating image*/
 .star {
