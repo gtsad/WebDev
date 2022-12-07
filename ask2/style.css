@@ -334,6 +334,7 @@ All images are the same size because of fixed container dimension and 100% heigh
 }
 
 textarea {
+  resize: none;
   border-radius: 50px;
   padding: 50px;
 }
@@ -582,7 +583,7 @@ a {
   margin: 0;
 }
 
-/*--------------------------CSS Rules for Signup.html------------------------*/
+/*--------------------------CSS Rules for Contact.html and Signup.html------------------------*/
 
 legend {
   font-family: Fugaz, cursive;
