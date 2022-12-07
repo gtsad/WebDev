@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap"
+    rel="stylesheet"
+  />
+  <title>Home Page</title>
+</head>
+<header>
+  <img id="logo" src="res/K1.png" />
+  <div id="login">
+    <h2 style="color: white">Login</h2>
+    <img src="res/login_icon.png" />
+  </div>
+  <nav role="navigation">
+    <div id="menuToggle">
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox" />
+      
+      <!--
+      Some spans to act as a hamburger.
+      
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+      <ul id="menu">
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>About</li></a>
+        <a href="#"><li>Info</li></a>
+        <a href="#"><li>Contact</li></a>
+        <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="topnav">
+    <a class="active" href="in">Home</a>
+    <a href="product-categories.html">Product Categories</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+  </div>
+</header>
+<body
+  style="
+    background-image: url(res/store_gif.gif);
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+  "
+>
+  <div class="text-center">
+    <h1 class="white_header">Welcome to our shop</h1>
+  </div>
+</body>
+<div id="footer">
+  <div>
+    <p class="footer_left">email: p3180189@aueb.gr</p>
+    <p class="footer_left">telephone: +30 69123123123</p>
+    <p class="footer_left">address: 28hs Oktovriou 76, Athens</p>
+  </div>
+  <div class="footer_logo">
+    <img id="f_logo" src="res/K1.png" />
+  </div>
+  <div class="footer_right">
+    <img
+      style="margin: 10px; width: 2rem; height: 2rem"
+      src="res/facebook-icon-18-256.png"
+    />
+    <img
+      style="margin: 10px; width: 2rem; height: 2rem"
+      src="res/white-instagram-icon-instagram-logo-instagram-instagram-icon-white-11553385558pigg7yyye3.png"
+    />
+    <img
+      style="margin: 10px; width: 2rem; height: 2rem"
+      src="res/twitter-icon-white-transparent-6.jpg.png"
+    />
+  </div>
+</div>
