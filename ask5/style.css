@@ -1,3 +1,13 @@
+.text-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1000px;
+}
+
+/*------------------General Rules for all pages-------------------*/
+
+/* Generic css rules for body bg */
 body {
   margin: 0;
   background-image: url(/res/bg.gif);
@@ -6,7 +16,6 @@ body {
   -webkit-background-size: cover;
   background-size: cover;
   min-height: 100%;
-  /* equal to footer height */
 }
 
 header {
@@ -15,19 +24,19 @@ header {
   overflow: visible;
 }
 
-.text-center {
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-  height: 1000px;
-}
-
+/*Black colored font (h1) with right shadows*/
 .black_header {
   text-shadow: 5px 3px #ffffff, 10px 8px #ff0000, 15px 13px rgb(0, 217, 255);
   color: #000000;
 }
 
+/*White colored font (h1) with right shadows*/
+.white_header {
+  color: rgb(255, 255, 255);
+  text-shadow: 5px 3px #000000, 10px 8px #ff0000, 15px 13px rgb(0, 217, 255);
+}
+
+/* Adjusting Logo to the center using margins auto*/
 #logo {
   padding: 50px 0;
   width: 6rem;
@@ -37,12 +46,14 @@ header {
   margin-right: auto;
 }
 
+/* Adjusting Footer Logo to the center using align-self as flex container child*/
 #f_logo {
   width: 6rem;
   height: 6rem;
   align-self: center;
 }
 
+/*Backgound tweaks */
 #bg {
   filter: brightness(50%);
   display: block;
@@ -54,13 +65,10 @@ header {
   border-radius: 60px;
 }
 
+/*Removing underline from links (a) */
 h2 a {
   text-decoration: none;
   color: white;
-}
-.white_header {
-  color: rgb(255, 255, 255);
-  text-shadow: 5px 3px #000000, 10px 8px #ff0000, 15px 13px rgb(0, 217, 255);
 }
 
 h1 {
@@ -69,215 +77,6 @@ h1 {
   text-align: center;
   font-size: 100px;
   margin: 6rem 0rem;
-}
-
-.category {
-  margin: 6rem 10%;
-}
-
-.cat_images div h2 {
-  text-align: center;
-  margin: 0;
-}
-
-.cat_images {
-  background-color: white;
-  box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
-  /* border:4px solid black; */
-  border-radius: 70px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1px;
-}
-
-.cat_images div {
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  background-color: white;
-  border-radius: 70px;
-  height: fit-content;
-  text-align: center;
-}
-
-.cat_images > div:hover {
-  transform: scale(1.1);
-}
-
-.product_card {
-  transform: scale(0.8);
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
-  width: 400px;
-  height: auto;
-  text-align: center;
-  border-radius: 50px;
-  padding: 50px 20px;
-}
-
-.product_card:hover {
-  transform: scale(0.85);
-  cursor: pointer;
-}
-
-.card_description {
-  height: 40px;
-}
-
-.card_description img {
-  height: 100%;
-}
-
-.card_image img {
-  height: 100%;
-}
-
-.card_image {
-  align-self: center;
-  width: 100%;
-  height: 300px;
-  margin-bottom: 20px;
-}
-
-.items_grid {
-  row-gap: 0rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-items: center;
-}
-
-.card_rating {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.rating_number {
-  text-align: left;
-  margin-left: 10px;
-}
-
-.star {
-  width: 100%;
-}
-
-.rating_img {
-  width: 150px;
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  justify-self: center;
-  align-items: center;
-}
-
-.cat_img_div img {
-  width: 100%;
-}
-
-.cat_img_div {
-  width: 200px;
-  align-self: center;
-}
-
-.product_code_p {
-  font-size: 14px;
-}
-
-.category_title {
-  font-family: Fugaz, cursive;
-  font-size: 4rem;
-  margin-left: 50px;
-  text-shadow: 5px 3px #ffffff, 10px 8px #ff0000, 15px 13px rgb(0, 217, 255);
-}
-
-.category_name {
-  font-family: Fugaz, cursive;
-  color: rgb(0, 0, 0);
-  text-align: left;
-  font-size: 2rem;
-  text-shadow: 1px 3px #f5f5f5, 3px 6px #ff0000, 6px 10px rgb(0, 217, 255);
-}
-
-.container {
-  margin: 200px;
-}
-
-.contact_form{
-  display: flex;
-  flex-direction: column;
-  text-align: le;
-  padding: 70px;
-  background-color: white;
-  margin: 8rem 10%;
-  box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
-  /* border:4px solid black; */
-  border-radius: 70px;
-
-}
-
-
-.contact_form >div{
-  display: flex;
-  
-  
-}
-.contact_form >div >div{
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  
-}
-
-
-.contact_form h1{
-  margin-bottom: 70px;
-}
-textarea{
-  border-radius: 50px;
-  padding: 50px;
-}
-
-#contact_button{
-  font-family: Fugaz, cursive;
-  background-color: #04aa6d;
-  color: white;
-  padding: 16px 20px;
-  margin: 90px 0 20px 0;
-  align-self: center;
-  border: none;
-  border-radius: 40px;
-  cursor: pointer;
-  font-size: 1.5rem;
-  width: 25%;
-  opacity: 0.9;
-}
-
-.container img {
-  width: 400px;
-  height: 400px;
-  margin-left: 100px;
-  overflow: hidden;
-}
-
-.container h1 {
-  font-family: Fugaz, cursive;
-  color: black;
-  font-size: 90px;
-  margin-right: 100px;
-  margin-top: 200px;
-  float: right;
-  overflow: hidden;
-}
-
-.about_par {
-  padding: 50px 80px;
-  word-break: break-all;
-  font-family: Rajdhani, cursive;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  font-size: 25px;
 }
 
 /* Add a black background color to the top navigation */
@@ -342,15 +141,255 @@ textarea{
   display: none;
 }
 
+
+p {
+  font-family: Rajdhani, sans-serif;
+  font-size: 1.2rem;
+}
+
+
+/*-----------------------CSS Rules for Categories.html-------------------*/
+
+.category {
+  margin: 6rem 10%;
+}
+
+.cat_images div h2 {
+  text-align: center;
+  margin: 0;
+}
+
+/* Set a grid to split subcategories equaly in one container.
+Three subcategories using 1fr 1fr 1fr */
+.cat_images {
+  background-color: white;
+  box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
+  /* border:4px solid black; */
+  border-radius: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1px;
+}
+
+/*Set flex display in every category container to help us fit the content correctly*/
+.cat_images div {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: white;
+  border-radius: 70px;
+  height: fit-content;
+  text-align: center;
+}
+
+/*On hover animation using transform:scale()*/
+.cat_images > div:hover {
+  transform: scale(1.1);
+}
+
+/* Remove underline for specific links (a) */
+.cat_images a {
+  text-decoration: none;
+}
+
+.category_title {
+  font-family: Fugaz, cursive;
+  font-size: 4rem;
+  margin-left: 50px;
+  text-shadow: 5px 3px #ffffff, 10px 8px #ff0000, 15px 13px rgb(0, 217, 255);
+}
+
+.category_name {
+  font-family: Fugaz, cursive;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  font-size: 2rem;
+  text-shadow: 1px 3px #f5f5f5, 3px 6px #ff0000, 6px 10px rgb(0, 217, 255);
+}
+
+.cat_img_div img {
+  width: 100%;
+}
+
+.cat_img_div {
+  width: 200px;
+  align-self: center;
+}
+
+/*-------------------CSS Rules for html pages with products list----------------------*/
+
+.product_card {
+  transform: scale(0.8);
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
+  width: 400px;
+  height: auto;
+  text-align: center;
+  border-radius: 50px;
+  padding: 50px 20px;
+}
+
+/*On hover animation for product card*/
+.product_card:hover {
+  transform: scale(0.85);
+  cursor: pointer;
+}
+
+.card_description {
+  height: 40px;
+}
+
+.card_description img {
+  height: 100%;
+}
+
+.card_image img {
+  height: 100%;
+}
+
+/*Aligning image to center as flex container child*/
+.card_image {
+  align-self: center;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.items_grid {
+  row-gap: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.card_rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating_number {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.star {
+  width: 100%;
+}
+
+.rating_img {
+  width: 150px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+}
+
+.product_code_p {
+  font-size: 14px;
+}
+
+.container {
+  margin: 200px;
+}
+
+/*----------------------CSS Rules for Contact.html------------------*/
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  text-align: le;
+  padding: 70px;
+  background-color: white;
+  margin: 8rem 10%;
+  box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
+  border-radius: 70px;
+}
+
+.contact_form > div {
+  display: flex;
+}
+.contact_form > div > div {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.contact_form h1 {
+  margin-bottom: 70px;
+}
+
+textarea {
+  border-radius: 50px;
+  padding: 50px;
+}
+
+#contact_button {
+  font-family: Fugaz, cursive;
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  margin: 90px 0 20px 0;
+  align-self: center;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  width: 25%;
+  opacity: 0.9;
+}
+
+.container img {
+  width: 400px;
+  height: 400px;
+  margin-left: 100px;
+  overflow: hidden;
+}
+
+.container h1 {
+  font-family: Fugaz, cursive;
+  color: black;
+  font-size: 90px;
+  margin-right: 100px;
+  margin-top: 200px;
+  float: right;
+  overflow: hidden;
+}
+
+/*--------------------------CSS Rules for About.html----------------------------*/
+
+.about_par {
+  padding: 50px 80px;
+  word-break: break-all;
+  font-family: Rajdhani, cursive;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 25px;
+}
+
 .contact_card {
   text-align: center;
   background-color: white;
   margin: 12rem 20%;
   box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
-  /* border:4px solid black; */
   border-radius: 70px;
 }
 
+
+#profile {
+  background-color: rgb(53, 53, 53);
+  height: 300px;
+  width: 300px;
+  margin-top: -150px;
+  border-radius: 100%;
+}
+
+
+
+/*--------------------------CSS Rules for product page--------------------------*/
 .product_details {
   display: flex;
   flex-direction: column;
@@ -392,7 +431,7 @@ textarea{
 
 #product_detailed_price h1 {
   color: rgb(0, 0, 0);
-  font-size: 4rem;
+  font-size: 3vw;
   text-align: right;
   text-shadow: 1px 3px #f5f5f5, 3px 6px #ff0000, 6px 10px rgb(0, 217, 255);
   margin: 0;
@@ -465,13 +504,7 @@ a {
   height: 700px;
 }
 
-#profile {
-  background-color: rgb(53, 53, 53);
-  height: 300px;
-  width: 300px;
-  margin-top: -150px;
-  border-radius: 100%;
-}
+
 
 h2 {
   font-family: Fugaz, cursive;
@@ -550,7 +583,7 @@ h2 {
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 60px;
-  font-size: 2rem;
+  font-size: 2vw;
   color: white;
 
   justify-self: center;
@@ -567,7 +600,7 @@ h2 {
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 60px;
-  font-size: 1.9rem;
+  font-size: 1.9vw;
   color: white;
   justify-self: center;
   align-self: center;
@@ -624,14 +657,14 @@ h2 {
   padding: 80px;
 }
 
-p {
-  font-family: Rajdhani, sans-serif;
-  font-size: 1.2rem;
-}
 
 .info_main_header {
   margin: 0;
 }
+
+
+
+/*--------------------------CSS Rules for Signup.html------------------------*/
 
 legend {
   font-family: Fugaz, cursive;
@@ -715,7 +748,6 @@ a {
   color: dodgerblue;
 }
 
-/* Set a grey background color and center the text of the "sign in" section */
 .signin {
   text-align: center;
 }
@@ -767,10 +799,6 @@ a {
 #paypal_icon {
   width: 18px;
   height: 18px;
-}
-
-.cat_images a{
-  text-decoration: none;
 }
 
 @font-face {
@@ -935,7 +963,6 @@ a {
   }
 
   /*-------General-------*/
-
 
   .text-center {
     display: flex;
@@ -1244,19 +1271,15 @@ a {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .items_grid {
-    grid-template-columns: 1fr;
-  }
-
-  #footer {
-    position: fixed;
-  }
+@media (min-width: 768px) and (max-width: 1200px) {
+  /*-------Product-------*/
 
   .product_main_grid {
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
     row-gap: 100px;
+    margin: 2rem;
     align-items: center;
     justify-content: center;
   }
@@ -1273,16 +1296,29 @@ a {
     flex-direction: column;
   }
 
+  .product_detailed_card {
+    background-color: white;
+    justify-self: center;
+    margin: 0rem;
+    box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
+    /* border:4px solid black; */
+    border-radius: 50px;
+    padding: 30px;
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+  }
+
   .product_info_grid {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 50px;
     background-color: white;
-    margin: 12rem 6rem;
+    margin: 5rem 2rem;
     box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
     /* border:4px solid black; */
-    border-radius: 70px;
-    padding: 80px;
+    border-radius: 50px;
+    padding: 30px;
   }
 
   .info_img {
@@ -1290,28 +1326,8 @@ a {
     height: 80%;
   }
 
-  .product_card {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
-    width: 100%;
-    height: auto;
-    text-align: center;
-    border-radius: 10rem;
-    padding: 125px 20px;
-  }
-
-  .product_detailed_card {
-    background-color: white;
-    margin: 0rem 0%;
-    box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
-    /* border:4px solid black; */
-    border-radius: 70px;
-    padding: 50px;
-    display: flex;
-    height: fit-content;
-    width: fit-content;
+  .title_par_info p {
+    font-size: 16px;
   }
 
   .product_details {
@@ -1321,36 +1337,62 @@ a {
     flex: 1;
   }
 
-  .card_image {
-    align-self: center;
-    height: 800px;
-    margin-bottom: 20px;
+  #rating_detailed_number {
+    font-size: 12px;
   }
 
-  .card_description {
-    height: 100px;
+  .code_and_stars img {
+    max-width: 100px;
   }
 
-  .card_title h2 {
-    font-size: 60px;
+  .small_preview_title h2 {
+    font-size: 20px;
   }
 
-  .rating_img {
-    width: 300px;
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    justify-self: center;
-    align-items: center;
-  }
-
-  .card_code p {
-    font-size: 25px;
-  }
-
-  .card_price h2 {
+  #product_detailed_price h1 {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    text-align: right;
+    text-shadow: 1px 3px #f5f5f5, 3px 6px #ff0000, 6px 10px rgb(0, 217, 255);
     margin: 0;
-    font-size: 100px;
+  }
+
+  #product_detailed_price {
+    margin-left: 0;
+  }
+
+  #product_image_detailed {
+    display: flex;
+    align-items: center; /* Vertical center of image & text */
+    justify-content: center;
+    height: 300px;
+  }
+
+  #product_detailed_image {
+    max-height: 100%;
+    margin: 0px;
+  }
+
+  .buy_and_price {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: auto;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #product_detailed_title {
+    margin: 0;
+    font-size: 30px;
+    font-family: Fugaz, cursive;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 3px #f5f5f5, 3px 6px #ff0000, 6px 10px rgb(0, 217, 255);
+    text-align: left;
+  }
+
+  .small_preview_text p {
+    font-family: Rajdhani, sans-serif;
+    font-size: 16px;
   }
 
   #buy_button {
@@ -1362,7 +1404,7 @@ a {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 60px;
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: white;
 
     justify-self: center;
@@ -1370,31 +1412,333 @@ a {
     line-height: 4rem;
   }
 
+  .info_h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .info_main_header {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  /*-------General-------*/
+
+  .text-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  header {
+    padding-bottom: 20px;
+    background-color: black;
+    overflow: visible;
+  }
+
+  #login {
+    gap: 5px;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  #login h2 {
+    font-size: 15px;
+  }
+
+  #login img {
+    width: 15px;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin: 0;
+    margin-top: 75px;
+  }
+
+  .black_header {
+    text-shadow: 1px 1.5px #ffffff, 2.5px 3px #ff0000, 3.5px 4px rgb(0 217 255);
+    color: #000000;
+  }
+
+  #f_logo {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .footer_logo {
+    align-self: center;
+  }
+
+  .footer_right {
+    font-family: Fugaz, cursive;
+    color: white;
+    text-align: left;
+    align-self: center;
+  }
+
+  .footer_right img {
+    margin: 10px;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .footer_left {
+    font-family: Fugaz, cursive;
+    color: white;
+    text-align: right;
+    font-size: 0.5rem;
+  }
+
+  body {
+    margin-bottom: 125px;
+  }
+
+  a {
+    font-size: 12px;
+  }
+
+  .page_nav {
+    margin: 20px 20px;
+  }
+
+  #footer {
+    position: fixed;
+    margin-top: 0;
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    height: 70px; /* Height of the footer */
+    background: rgb(0, 0, 0);
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 5fr 1fr 5fr;
+    align-content: center;
+  }
+
+  .topnav a {
+    font-size: 0.8rem;
+    padding: 2px 5px;
+    margin: 0;
+  }
+
+  #logo {
+    padding: 25px 0;
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .topnav {
+    row-gap: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: unset;
+    padding: 0;
+    justify-content: space-around;
+    background-color: transparent;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  /*-------Products List Page-------*/
+
+  .items_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product_card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
+    width: 400px;
+    height: auto;
+    text-align: center;
+    border-radius: 50px;
+    padding: 30px 10px;
+  }
+
+  .card_title h2 {
+    font-size: 22px;
+  }
+
+  .price_h2 {
+    margin: 0;
+  }
+
+  .rating_img {
+    width: 100px;
+  }
+
+  /*-------Categories Page-------*/
+
+  .cat_img_div {
+    padding: 0;
+    width: 80px;
+    align-self: center;
+  }
+
+  .cat_images div {
+    padding: 3px 0px;
+    border-radius: 20px;
+  }
+
+  .cat_images {
+    border-radius: 20px;
+  }
+
+  .category_name {
+    font-family: Fugaz, cursive;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size: 13px;
+    text-shadow: 0.5px 1px #f5f5f5, 1.5px 2px #ff0000,
+      2.5px 3px rgb(0, 217, 255);
+  }
+
+  .category_title {
+    font-family: Fugaz, cursive;
+    font-size: 2rem;
+    margin-left: 20px;
+    text-shadow: 2px 2.5px #ffffff, 4px 4.5px #ff0000,
+      6px 6.5px rgb(0, 217, 255);
+  }
+
+  .category {
+    margin: 6rem 10%;
+  }
+
+  /*-------About.css-------*/
+
+  #profile {
+    background-color: rgb(53, 53, 53);
+    height: 150px;
+    width: 150px;
+    margin-top: -75px;
+    border-radius: 100%;
+  }
+
+  .contact_card {
+    text-align: center;
+    background-color: white;
+    margin: 150px 10%;
+    box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
+    /* border:4px solid black; */
+    border-radius: 35px;
+  }
+
+  .about_par {
+    padding: 5px 30px;
+    font-size: 16px;
+  }
+
+  /*--------Sign Up page css-------*/
+
   .register_card {
+    padding: 40px 10px;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     background-color: white;
-    margin: 12rem 10%;
+    margin: 50px 10%;
     box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
     /* border:4px solid black; */
-    border-radius: 70px;
-  }
-  .contact_card {
-    text-align: center;
-    background-color: white;
-    margin: 12rem 10%;
-    box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
-    /* border:4px solid black; */
-    border-radius: 70px;
+    border-radius: 50px;
   }
 
-  .topnav a {
-    font-size: 2rem;
+  fieldset {
+    border-color: rgb(255, 255, 255);
+    padding: 0px;
+    align-items: center;
+    border-radius: 40px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
   }
 
-  .about_par {
-    font-size: 35px;
+  .registerbtn {
+    font-family: Fugaz, cursive;
+    background-color: #04aa6d;
+    color: white;
+    padding: 16px 20px;
+    margin: 20px 0 10px 0;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 15px;
+    width: fit-content;
+    opacity: 0.9;
+  }
+
+  input[type="date"],
+  input[type="email"],
+  input[type="text"],
+  input[type="password"] {
+    font-family: Fugaz, cursive;
+    width: 50%;
+    padding: 5px 20px;
+    margin: 0;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 40px;
+    background: #f1f1f1;
+    font-size: 12px;
+  }
+  label {
+    font-family: Fugaz, cursive;
+    letter-spacing: 0.8px;
+    font-size: 13px;
+  }
+
+  .checkboxes {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .paypal {
+    margin-top: 0;
+    margin-bottom: 20px;
+    height: 30px;
+    display: none;
+    align-items: center;
+    gap: 9px;
+    padding: 6px 18px;
+    background-color: #0070ba;
+    border-radius: 50px;
+  }
+
+  legend {
+    margin-bottom: 20px;
+    font-family: Fugaz, cursive;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .items_grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1800px) {
+  .items_grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
