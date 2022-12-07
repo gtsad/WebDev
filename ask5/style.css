@@ -311,6 +311,8 @@ All images are the same size because of fixed container dimension and 100% heigh
   margin-bottom: 20px;
 }
 
+
+/*Grid for items. Columns change for smaller or bigger screens wiht @media*/
 .items_grid {
   row-gap: 5rem;
   display: grid;
@@ -318,21 +320,18 @@ All images are the same size because of fixed container dimension and 100% heigh
   justify-items: center;
 }
 
-.card_rating {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .rating_number {
   text-align: left;
   margin-left: 10px;
 }
 
+
+/**Product card rating image*/
 .star {
   width: 100%;
 }
 
+/*Product card rating image container (stars)*/
 .rating_img {
   width: 150px;
   display: flex;
@@ -342,6 +341,7 @@ All images are the same size because of fixed container dimension and 100% heigh
   align-items: center;
 }
 
+/*Font size for product code*/
 .product_code_p {
   font-size: 14px;
 }
@@ -526,6 +526,7 @@ a {
   font-family: Fugaz, cursive;
 }
 
+/*Quick list with previous pages to navigate from products to categories easier*/
 .page_nav {
   text-align: center;
   border-radius: 50px;
@@ -537,6 +538,7 @@ a {
   margin-left: auto;
 }
 
+/*Flex Container for buy button and price to place one next to another */
 .buy_and_price {
   display: flex;
   margin-top: auto;

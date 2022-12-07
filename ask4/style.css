@@ -1,3 +1,13 @@
+.text-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1000px;
+}
+
+/*------------------General Rules for all pages-------------------*/
+
+/* Generic css rules for body bg */
 body {
   margin: 0;
   background-image: url(/res/bg.gif);
@@ -6,9 +16,7 @@ body {
   -webkit-background-size: cover;
   background-size: cover;
   min-height: 100%;
-  /* equal to footer height */
 }
-
 
 header {
   padding-bottom: 50px;
@@ -16,18 +24,65 @@ header {
   overflow: visible;
 }
 
-.text-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 1000px;
+/*Footer*/
+#footer {
+  margin-top: 200px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 200px; /* Height of the footer */
+  background: rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: 5fr 1fr 5fr;
+  gap: 3rem;
+  align-content: center;
 }
 
+.footer_logo {
+  align-self: center;
+}
+
+.footer_right {
+  font-family: Fugaz, cursive;
+  color: white;
+  text-align: left;
+  align-self: center;
+}
+
+.footer_right img {
+  margin: 10px;
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer_left {
+  font-family: Fugaz, cursive;
+  color: white;
+  text-align: right;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+h2 {
+  font-family: Fugaz, cursive;
+}
+
+/*Black colored font (h1) with right shadows*/
 .black_header {
   text-shadow: 5px 3px #ffffff, 10px 8px #ff0000, 15px 13px rgb(0, 217, 255);
   color: #000000;
 }
 
+/*White colored font (h1) with right shadows*/
+.white_header {
+  color: rgb(255, 255, 255);
+  text-shadow: 5px 3px #000000, 10px 8px #ff0000, 15px 13px rgb(0, 217, 255);
+}
+
+/* Adjusting Logo to the center using margins auto*/
 #logo {
   padding: 50px 0;
   width: 6rem;
@@ -37,12 +92,14 @@ header {
   margin-right: auto;
 }
 
+/* Adjusting Footer Logo to the center using align-self as flex container child*/
 #f_logo {
   width: 6rem;
   height: 6rem;
   align-self: center;
 }
 
+/*Backgound tweaks */
 #bg {
   filter: brightness(50%);
   display: block;
@@ -54,13 +111,10 @@ header {
   border-radius: 60px;
 }
 
+/*Removing underline from links (a) */
 h2 a {
   text-decoration: none;
   color: white;
-}
-.white_header {
-  color: rgb(255, 255, 255);
-  text-shadow: 5px 3px #000000, 10px 8px #ff0000, 15px 13px rgb(0, 217, 255);
 }
 
 h1 {
@@ -71,6 +125,77 @@ h1 {
   margin: 6rem 0rem;
 }
 
+/* Add a black background color to the top navigation */
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 100px;
+  background-color: transparent;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  margin: 0 75px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: Fugaz, cursive;
+  font-size: 1.6rem;
+  border-radius: 30px;
+}
+
+/*Change current page title to black in nav menu*/
+.current {
+  color: black;
+}
+
+/*Container for login img and text*/
+#login {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+  right: 70px;
+  top: 50px;
+}
+
+/*Login text*/
+#login h2 {
+  font-size: 25px;
+}
+
+/*Login image*/
+#login img {
+  width: 25px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+
+/* Paragraphs font family and size*/
+p {
+  font-family: Rajdhani, sans-serif;
+  font-size: 1.2rem;
+}
+
+/*-----------------------CSS Rules for Categories.html-------------------*/
+
+/* Category title and subcategories container*/
 .category {
   margin: 6rem 10%;
 }
@@ -80,6 +205,8 @@ h1 {
   margin: 0;
 }
 
+/* Set a grid to split subcategories equaly in one container.
+Three subcategories using 1fr 1fr 1fr */
 .cat_images {
   background-color: white;
   box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
@@ -90,6 +217,7 @@ h1 {
   grid-gap: 1px;
 }
 
+/*Set flex display in every category container to help us fit the content correctly*/
 .cat_images div {
   display: flex;
   flex-direction: column;
@@ -100,14 +228,45 @@ h1 {
   text-align: center;
 }
 
+/*On hover animation using transform:scale()*/
 .cat_images > div:hover {
   transform: scale(1.1);
 }
 
-.cat_images a{
+/* Remove underline for specific links (a) */
+.cat_images a {
   text-decoration: none;
 }
 
+/*Category title*/
+.category_title {
+  font-family: Fugaz, cursive;
+  font-size: 4rem;
+  margin-left: 50px;
+  text-shadow: 5px 3px #ffffff, 10px 8px #ff0000, 15px 13px rgb(0, 217, 255);
+}
+/*Subcategory title*/
+.category_name {
+  font-family: Fugaz, cursive;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  font-size: 2rem;
+  text-shadow: 1px 3px #f5f5f5, 3px 6px #ff0000, 6px 10px rgb(0, 217, 255);
+}
+
+/*Subcategory image */
+.cat_img_div img {
+  width: 100%;
+}
+
+/*Subcategory image container */
+.cat_img_div {
+  width: 200px;
+  align-self: center;
+}
+
+/*-------------------CSS Rules for html pages with products list----------------------*/
+/*Product card in items list */
 .product_card {
   transform: scale(0.8);
   display: flex;
@@ -121,23 +280,30 @@ h1 {
   padding: 50px 20px;
 }
 
+/*On hover animation for product card*/
 .product_card:hover {
   transform: scale(0.85);
   cursor: pointer;
 }
 
+/* Product manufacturer logo container in product card*/
 .card_description {
   height: 40px;
 }
 
+/* Product manufacturer logo image in product card*/
 .card_description img {
   height: 100%;
 }
 
+/*Product image in Product Card
+All images are the same size because of fixed container dimension and 100% height of actual image*/
 .card_image img {
   height: 100%;
 }
 
+/*Product image container in Product Card*/
+/*Aligning image to center as flex container child*/
 .card_image {
   align-self: center;
   width: 100%;
@@ -145,6 +311,8 @@ h1 {
   margin-bottom: 20px;
 }
 
+
+/*Grid for items. Columns change for smaller or bigger screens wiht @media*/
 .items_grid {
   row-gap: 5rem;
   display: grid;
@@ -152,21 +320,18 @@ h1 {
   justify-items: center;
 }
 
-.card_rating {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .rating_number {
   text-align: left;
   margin-left: 10px;
 }
 
+
+/**Product card rating image*/
 .star {
   width: 100%;
 }
 
+/*Product card rating image container (stars)*/
 .rating_img {
   width: 150px;
   display: flex;
@@ -176,39 +341,18 @@ h1 {
   align-items: center;
 }
 
-.cat_img_div img {
-  width: 100%;
-}
-
-.cat_img_div {
-  width: 200px;
-  align-self: center;
-}
-
+/*Font size for product code*/
 .product_code_p {
   font-size: 14px;
-}
-
-.category_title {
-  font-family: Fugaz, cursive;
-  font-size: 4rem;
-  margin-left: 50px;
-  text-shadow: 5px 3px #ffffff, 10px 8px #ff0000, 15px 13px rgb(0, 217, 255);
-}
-
-.category_name {
-  font-family: Fugaz, cursive;
-  color: rgb(0, 0, 0);
-  text-align: left;
-  font-size: 2rem;
-  text-shadow: 1px 3px #f5f5f5, 3px 6px #ff0000, 6px 10px rgb(0, 217, 255);
 }
 
 .container {
   margin: 200px;
 }
 
-.contact_form{
+/*----------------------CSS Rules for Contact.html------------------*/
+
+.contact_form {
   display: flex;
   flex-direction: column;
   text-align: le;
@@ -216,34 +360,28 @@ h1 {
   background-color: white;
   margin: 8rem 10%;
   box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
-  /* border:4px solid black; */
   border-radius: 70px;
-
 }
 
-
-.contact_form >div{
+.contact_form > div {
   display: flex;
-  
-  
 }
-.contact_form >div >div{
+.contact_form > div > div {
   display: flex;
   width: 100%;
   flex-direction: column;
-  
 }
 
-
-.contact_form h1{
+.contact_form h1 {
   margin-bottom: 70px;
 }
-textarea{
+
+textarea {
   border-radius: 50px;
   padding: 50px;
 }
 
-#contact_button{
+#contact_button {
   font-family: Fugaz, cursive;
   background-color: #04aa6d;
   color: white;
@@ -275,86 +413,35 @@ textarea{
   overflow: hidden;
 }
 
+/*--------------------------CSS Rules for About.html----------------------------*/
+
 .about_par {
   padding: 50px 80px;
-  word-break: break-all;
   font-family: Rajdhani, cursive;
   color: rgb(0, 0, 0);
   text-align: center;
   font-size: 25px;
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0px 100px;
-  background-color: transparent;
-  overflow: hidden;
-  text-align: center;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  margin: 0 75px;
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-family: Fugaz, cursive;
-  font-size: 1.6rem;
-  border-radius: 30px;
-}
-
-.current {
-  color: black;
-}
-
-#login {
-  display: flex;
-  width: fit-content;
-  align-items: center;
-  gap: 15px;
-  position: absolute;
-  right: 70px;
-  top: 50px;
-}
-
-#login h2 {
-  font-size: 25px;
-}
-
-#login img {
-  width: 25px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: white;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: white;
-  color: rgb(0, 0, 0);
-}
-
-.topnav .icon {
-  display: none;
-}
-
+/*Add shadow to container and adjust marings and paddings*/
 .contact_card {
   text-align: center;
   background-color: white;
   margin: 12rem 20%;
   box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
-  /* border:4px solid black; */
   border-radius: 70px;
 }
 
+/*Set profile picture dimension and make the half of it overlap the container*/
+#profile {
+  background-color: rgb(53, 53, 53);
+  height: 300px;
+  width: 300px;
+  margin-top: -150px;
+  border-radius: 100%;
+}
+
+/*--------------------------CSS Rules for product page--------------------------*/
 .product_details {
   display: flex;
   flex-direction: column;
@@ -396,7 +483,7 @@ textarea{
 
 #product_detailed_price h1 {
   color: rgb(0, 0, 0);
-  font-size:3vw;
+  font-size: 3vw;
   text-align: right;
   text-shadow: 1px 3px #f5f5f5, 3px 6px #ff0000, 6px 10px rgb(0, 217, 255);
   margin: 0;
@@ -439,6 +526,7 @@ a {
   font-family: Fugaz, cursive;
 }
 
+/*Quick list with previous pages to navigate from products to categories easier*/
 .page_nav {
   text-align: center;
   border-radius: 50px;
@@ -450,6 +538,7 @@ a {
   margin-left: auto;
 }
 
+/*Flex Container for buy button and price to place one next to another */
 .buy_and_price {
   display: flex;
   margin-top: auto;
@@ -469,57 +558,9 @@ a {
   height: 700px;
 }
 
-#profile {
-  background-color: rgb(53, 53, 53);
-  height: 300px;
-  width: 300px;
-  margin-top: -150px;
-  border-radius: 100%;
-}
-
-h2 {
-  font-family: Fugaz, cursive;
-}
-
 .price_h2 {
   font-size: 40px;
   text-shadow: 2px 3px #ffffff, 5px 6px #ff0000, 8px 9px rgb(0, 217, 255);
-}
-
-#footer {
-  margin-top: 200px;
-  text-align: center;
-  bottom: 0;
-  width: 100%;
-  height: 200px; /* Height of the footer */
-  background: rgb(0, 0, 0);
-  display: grid;
-  grid-template-columns: 5fr 1fr 5fr;
-  gap: 3rem;
-  align-content: center;
-}
-
-.footer_logo {
-  align-self: center;
-}
-
-.footer_right {
-  font-family: Fugaz, cursive;
-  color: white;
-  text-align: left;
-  align-self: center;
-}
-
-.footer_right img {
-  margin: 10px;
-  width: 2rem;
-  height: 2rem;
-}
-
-.footer_left {
-  font-family: Fugaz, cursive;
-  color: white;
-  text-align: right;
 }
 
 #products_page_title {
@@ -583,6 +624,7 @@ h2 {
   height: 400px;
   border-radius: 40px;
 }
+
 .info_image_div {
   align-self: center;
 }
@@ -628,14 +670,11 @@ h2 {
   padding: 80px;
 }
 
-p {
-  font-family: Rajdhani, sans-serif;
-  font-size: 1.2rem;
-}
-
 .info_main_header {
   margin: 0;
 }
+
+/*--------------------------CSS Rules for Signup.html------------------------*/
 
 legend {
   font-family: Fugaz, cursive;
@@ -669,7 +708,7 @@ form h1 {
   margin: 0;
 }
 
-/* Full-width input fields */
+/* Adjust input fields */
 input[type="date"],
 input[type="email"],
 input[type="text"],
@@ -682,6 +721,8 @@ input[type="password"] {
   border-radius: 40px;
   background: #f1f1f1;
 }
+
+/*Change color on focus*/
 input[type="date"]:focus,
 input[type="email"]:focus,
 input[type="text"]:focus,
@@ -714,12 +755,6 @@ label {
   opacity: 1;
 }
 
-/* Add a blue text color to links */
-a {
-  color: dodgerblue;
-}
-
-/* Set a grey background color and center the text of the "sign in" section */
 .signin {
   text-align: center;
 }
@@ -773,6 +808,7 @@ a {
   height: 18px;
 }
 
+/*------------------------------ @font-face and @media -------------------------*/
 @font-face {
   font-family: Fugaz;
   src: url(/res/FugazOne-Regular.ttf);
@@ -935,7 +971,6 @@ a {
   }
 
   /*-------General-------*/
-
 
   .text-center {
     display: flex;
@@ -1245,480 +1280,473 @@ a {
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
- /*-------Product-------*/
-
- .product_main_grid {
-  display: flex;
-  padding: 0;
-  flex-direction: column;
-  row-gap: 100px;
-  margin: 2rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.image_right_info {
-  display: flex;
-  gap: 50px;
-  flex-direction: column-reverse;
-}
-
-.image_left_info {
-  display: flex;
-  gap: 50px;
-  flex-direction: column;
-}
-
-.product_detailed_card {
-  background-color: white;
-  justify-self: center;
-  margin: 0rem;
-  box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
-  /* border:4px solid black; */
-  border-radius: 50px;
-  padding: 30px;
-  display: flex;
-  height: fit-content;
-  width: fit-content;
-}
-
-.product_info_grid {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  background-color: white;
-  margin: 5rem 2rem;
-  box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
-  /* border:4px solid black; */
-  border-radius: 50px;
-  padding: 30px;
-}
-
-.info_img {
-  width: 80%;
-  height: 80%;
-}
-
-.title_par_info p {
-  font-size: 16px;
-}
-
-.product_details {
-  display: flex;
-  align-self: center;
-  flex-direction: column;
-  flex: 1;
-}
-
-#rating_detailed_number {
-  font-size: 12px;
-}
-
-.code_and_stars img {
-  max-width: 100px;
-}
-
-.small_preview_title h2 {
-  font-size: 20px;
-}
-
-#product_detailed_price h1 {
-  color: rgb(0, 0, 0);
-  font-size: 2rem;
-  text-align: right;
-  text-shadow: 1px 3px #f5f5f5, 3px 6px #ff0000, 6px 10px rgb(0, 217, 255);
-  margin: 0;
-}
-
-#product_detailed_price {
-  margin-left: 0;
-}
-
-#product_image_detailed {
-  display: flex;
-  align-items: center; /* Vertical center of image & text */
-  justify-content: center;
-  height: 300px;
-}
-
-#product_detailed_image {
-  max-height: 100%;
-  margin: 0px;
-}
-
-.buy_and_price {
-  display: flex;
-  flex-direction: column-reverse;
-  margin-top: auto;
-  align-items: center;
-  gap: 10px;
-}
-
-#product_detailed_title {
-  margin: 0;
-  font-size: 30px;
-  font-family: Fugaz, cursive;
-  color: rgb(0, 0, 0);
-  text-shadow: 1px 3px #f5f5f5, 3px 6px #ff0000, 6px 10px rgb(0, 217, 255);
-  text-align: left;
-}
-
-.small_preview_text p {
-  font-family: Rajdhani, sans-serif;
-  font-size: 16px;
-}
-
-#buy_button {
-  font-family: Fugaz, cursive;
-  background-color: #358657; /* Green */
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 60px;
-  font-size: 1.5rem;
-  color: white;
-
-  justify-self: center;
-  align-self: center;
-  line-height: 4rem;
-}
-
-.info_h2 {
-  margin: 0;
-  font-size: 20px;
-}
-
-.info_main_header {
-  font-size: 30px;
-  margin: 0;
-}
-
-/*-------General-------*/
-
-
-.text-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-p {
-  font-size: 16px;
-}
-
-header {
-  padding-bottom: 20px;
-  background-color: black;
-  overflow: visible;
-}
-
-#login {
-  gap: 5px;
-  display: flex;
-  width: fit-content;
-  align-items: center;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
-
-#login h2 {
-  font-size: 15px;
-}
-
-#login img {
-  width: 15px;
-}
-
-h1 {
-  font-size: 40px;
-  margin: 0;
-  margin-top: 75px;
-}
-
-.black_header {
-  text-shadow: 1px 1.5px #ffffff, 2.5px 3px #ff0000, 3.5px 4px rgb(0 217 255);
-  color: #000000;
-}
-
-#f_logo {
-  width: 1rem;
-  height: 1rem;
-}
-
-.footer_logo {
-  align-self: center;
-}
-
-.footer_right {
-  font-family: Fugaz, cursive;
-  color: white;
-  text-align: left;
-  align-self: center;
-}
-
-.footer_right img {
-  margin: 10px;
-  width: 1rem;
-  height: 1rem;
-}
-
-.footer_left {
-  font-family: Fugaz, cursive;
-  color: white;
-  text-align: right;
-  font-size: 0.5rem;
-}
-
-body {
-  margin-bottom: 125px;
-}
-
-a {
-  font-size: 12px;
-}
-
-.page_nav {
-  margin: 20px 20px;
-}
-
-#footer {
-  position: fixed;
-  margin-top: 0;
-  text-align: center;
-  bottom: 0px;
-  width: 100%;
-  height: 70px; /* Height of the footer */
-  background: rgb(0, 0, 0);
-  display: grid;
-  gap: 10px;
-  grid-template-columns: 5fr 1fr 5fr;
-  align-content: center;
-}
-
-.topnav a {
-  font-size: 0.8rem;
-  padding: 2px 5px;
-  margin: 0;
-}
-
-#logo {
-  padding: 25px 0;
-  width: 2rem;
-  height: 2rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.topnav {
-  row-gap: 0.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  overflow: unset;
-  padding: 0;
-  justify-content: space-around;
-  background-color: transparent;
-  max-width: 100%;
-  text-align: center;
-}
-
-/*-------Products List Page-------*/
-
-.items_grid {
-  grid-template-columns: 1fr 1fr;
-}
-
-.product_card {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
-  width: 400px;
-  height: auto;
-  text-align: center;
-  border-radius: 50px;
-  padding: 30px 10px;
-}
-
-.card_title h2 {
-  font-size: 22px;
-}
-
-.price_h2 {
-  margin: 0;
-}
-
-.rating_img {
-  width: 100px;
-}
-
-/*-------Categories Page-------*/
-
-.cat_img_div {
-  padding: 0;
-  width: 80px;
-  align-self: center;
-}
-
-.cat_images div {
-  padding: 3px 0px;
-  border-radius: 20px;
-}
-
-.cat_images {
-  border-radius: 20px;
-}
-
-
-
-.category_name {
-  font-family: Fugaz, cursive;
-  color: rgb(0, 0, 0);
-  text-align: left;
-  font-size: 13px;
-  text-shadow: 0.5px 1px #f5f5f5, 1.5px 2px #ff0000,
-    2.5px 3px rgb(0, 217, 255);
-}
-
-.category_title {
-  font-family: Fugaz, cursive;
-  font-size: 2rem;
-  margin-left: 20px;
-  text-shadow: 2px 2.5px #ffffff, 4px 4.5px #ff0000,
-    6px 6.5px rgb(0, 217, 255);
-}
-
-.category {
-  margin: 6rem 10%;
-}
-
-/*-------About.css-------*/
-
-#profile {
-  background-color: rgb(53, 53, 53);
-  height: 150px;
-  width: 150px;
-  margin-top: -75px;
-  border-radius: 100%;
-}
-
-.contact_card {
-  text-align: center;
-  background-color: white;
-  margin: 150px 10%;
-  box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
-  /* border:4px solid black; */
-  border-radius: 35px;
-}
-
-.about_par {
-  padding: 5px 30px;
-  font-size: 16px;
-}
-
-/*--------Sign Up page css-------*/
-
-.register_card {
-  padding: 40px 10px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  background-color: white;
-  margin: 50px 10%;
-  box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
-  /* border:4px solid black; */
-  border-radius: 50px;
-}
-
-fieldset {
-  border-color: rgb(255, 255, 255);
-  padding: 0px;
-  align-items: center;
-  border-radius: 40px;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
-}
-
-.registerbtn {
-  font-family: Fugaz, cursive;
-  background-color: #04aa6d;
-  color: white;
-  padding: 16px 20px;
-  margin: 20px 0 10px 0;
-  border: none;
-  border-radius: 40px;
-  cursor: pointer;
-  font-size: 15px;
-  width: fit-content;
-  opacity: 0.9;
-}
-
-input[type="date"],
-input[type="email"],
-input[type="text"],
-input[type="password"] {
-  font-family: Fugaz, cursive;
-  width: 50%;
-  padding: 5px 20px;
-  margin: 0;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 40px;
-  background: #f1f1f1;
-  font-size: 12px;
-}
-label {
-  font-family: Fugaz, cursive;
-  letter-spacing: 0.8px;
-  font-size: 13px;
-}
-
-.checkboxes {
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
-  gap: 10px;
-}
-
-.paypal {
-  margin-top: 0;
-  margin-bottom: 20px;
-  height: 30px;
-  display: none;
-  align-items: center;
-  gap: 9px;
-  padding: 6px 18px;
-  background-color: #0070ba;
-  border-radius: 50px;
-}
-
-legend {
-  margin-bottom: 20px;
-  font-family: Fugaz, cursive;
-} }
-
-
-@media (min-width: 1200px) and (max-width:1300px) { 
-  .items_grid{
-    grid-template-columns:1fr 1fr 1fr 1fr;
+  /*-------Product-------*/
+
+  .product_main_grid {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    row-gap: 100px;
+    margin: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image_right_info {
+    display: flex;
+    gap: 50px;
+    flex-direction: column-reverse;
+  }
+
+  .image_left_info {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+  }
+
+  .product_detailed_card {
+    background-color: white;
+    justify-self: center;
+    margin: 0rem;
+    box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
+    /* border:4px solid black; */
+    border-radius: 50px;
+    padding: 30px;
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .product_info_grid {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: white;
+    margin: 5rem 2rem;
+    box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
+    /* border:4px solid black; */
+    border-radius: 50px;
+    padding: 30px;
+  }
+
+  .info_img {
+    width: 80%;
+    height: 80%;
+  }
+
+  .title_par_info p {
+    font-size: 16px;
+  }
+
+  .product_details {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  #rating_detailed_number {
+    font-size: 12px;
+  }
+
+  .code_and_stars img {
+    max-width: 100px;
+  }
+
+  .small_preview_title h2 {
+    font-size: 20px;
+  }
+
+  #product_detailed_price h1 {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    text-align: right;
+    text-shadow: 1px 3px #f5f5f5, 3px 6px #ff0000, 6px 10px rgb(0, 217, 255);
+    margin: 0;
+  }
+
+  #product_detailed_price {
+    margin-left: 0;
+  }
+
+  #product_image_detailed {
+    display: flex;
+    align-items: center; /* Vertical center of image & text */
+    justify-content: center;
+    height: 300px;
+  }
+
+  #product_detailed_image {
+    max-height: 100%;
+    margin: 0px;
+  }
+
+  .buy_and_price {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: auto;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #product_detailed_title {
+    margin: 0;
+    font-size: 30px;
+    font-family: Fugaz, cursive;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 3px #f5f5f5, 3px 6px #ff0000, 6px 10px rgb(0, 217, 255);
+    text-align: left;
+  }
+
+  .small_preview_text p {
+    font-family: Rajdhani, sans-serif;
+    font-size: 16px;
+  }
+
+  #buy_button {
+    font-family: Fugaz, cursive;
+    background-color: #358657; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 60px;
+    font-size: 1.5rem;
+    color: white;
+
+    justify-self: center;
+    align-self: center;
+    line-height: 4rem;
+  }
+
+  .info_h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .info_main_header {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  /*-------General-------*/
+
+  .text-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  header {
+    padding-bottom: 20px;
+    background-color: black;
+    overflow: visible;
+  }
+
+  #login {
+    gap: 5px;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  #login h2 {
+    font-size: 15px;
+  }
+
+  #login img {
+    width: 15px;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin: 0;
+    margin-top: 75px;
+  }
+
+  .black_header {
+    text-shadow: 1px 1.5px #ffffff, 2.5px 3px #ff0000, 3.5px 4px rgb(0 217 255);
+    color: #000000;
+  }
+
+  #f_logo {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .footer_logo {
+    align-self: center;
+  }
+
+  .footer_right {
+    font-family: Fugaz, cursive;
+    color: white;
+    text-align: left;
+    align-self: center;
+  }
+
+  .footer_right img {
+    margin: 10px;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .footer_left {
+    font-family: Fugaz, cursive;
+    color: white;
+    text-align: right;
+    font-size: 0.5rem;
+  }
+
+  body {
+    margin-bottom: 125px;
+  }
+
+  a {
+    font-size: 12px;
+  }
+
+  .page_nav {
+    margin: 20px 20px;
+  }
+
+  #footer {
+    position: fixed;
+    margin-top: 0;
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    height: 70px; /* Height of the footer */
+    background: rgb(0, 0, 0);
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 5fr 1fr 5fr;
+    align-content: center;
+  }
+
+  .topnav a {
+    font-size: 0.8rem;
+    padding: 2px 5px;
+    margin: 0;
+  }
+
+  #logo {
+    padding: 25px 0;
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .topnav {
+    row-gap: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: unset;
+    padding: 0;
+    justify-content: space-around;
+    background-color: transparent;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  /*-------Products List Page-------*/
+
+  .items_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product_card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
+    width: 400px;
+    height: auto;
+    text-align: center;
+    border-radius: 50px;
+    padding: 30px 10px;
+  }
+
+  .card_title h2 {
+    font-size: 22px;
+  }
+
+  .price_h2 {
+    margin: 0;
+  }
+
+  .rating_img {
+    width: 100px;
+  }
+
+  /*-------Categories Page-------*/
+
+  .cat_img_div {
+    padding: 0;
+    width: 80px;
+    align-self: center;
+  }
+
+  .cat_images div {
+    padding: 3px 0px;
+    border-radius: 20px;
+  }
+
+  .cat_images {
+    border-radius: 20px;
+  }
+
+  .category_name {
+    font-family: Fugaz, cursive;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size: 13px;
+    text-shadow: 0.5px 1px #f5f5f5, 1.5px 2px #ff0000,
+      2.5px 3px rgb(0, 217, 255);
+  }
+
+  .category_title {
+    font-family: Fugaz, cursive;
+    font-size: 2rem;
+    margin-left: 20px;
+    text-shadow: 2px 2.5px #ffffff, 4px 4.5px #ff0000,
+      6px 6.5px rgb(0, 217, 255);
+  }
+
+  .category {
+    margin: 6rem 10%;
+  }
+
+  /*-------About.css-------*/
+
+  #profile {
+    background-color: rgb(53, 53, 53);
+    height: 150px;
+    width: 150px;
+    margin-top: -75px;
+    border-radius: 100%;
+  }
+
+  .contact_card {
+    text-align: center;
+    background-color: white;
+    margin: 150px 10%;
+    box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
+    /* border:4px solid black; */
+    border-radius: 35px;
+  }
+
+  .about_par {
+    padding: 5px 30px;
+    font-size: 16px;
+  }
+
+  /*--------Sign Up page css-------*/
+
+  .register_card {
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    margin: 50px 10%;
+    box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
+    /* border:4px solid black; */
+    border-radius: 50px;
+  }
+
+  fieldset {
+    border-color: rgb(255, 255, 255);
+    padding: 0px;
+    align-items: center;
+    border-radius: 40px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .registerbtn {
+    font-family: Fugaz, cursive;
+    background-color: #04aa6d;
+    color: white;
+    padding: 16px 20px;
+    margin: 20px 0 10px 0;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 15px;
+    width: fit-content;
+    opacity: 0.9;
+  }
+
+  input[type="date"],
+  input[type="email"],
+  input[type="text"],
+  input[type="password"] {
+    font-family: Fugaz, cursive;
+    width: 50%;
+    padding: 5px 20px;
+    margin: 0;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 40px;
+    background: #f1f1f1;
+    font-size: 12px;
+  }
+  label {
+    font-family: Fugaz, cursive;
+    letter-spacing: 0.8px;
+    font-size: 13px;
+  }
+
+  .checkboxes {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .paypal {
+    margin-top: 0;
+    margin-bottom: 20px;
+    height: 30px;
+    display: none;
+    align-items: center;
+    gap: 9px;
+    padding: 6px 18px;
+    background-color: #0070ba;
+    border-radius: 50px;
+  }
+
+  legend {
+    margin-bottom: 20px;
+    font-family: Fugaz, cursive;
   }
 }
 
-
-@media (min-width: 1800px) { 
-  .items_grid{
-    grid-template-columns:1fr 1fr 1fr 1fr;
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .items_grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
-
-
+@media (min-width: 1800px) {
+  .items_grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
