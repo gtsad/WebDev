@@ -47,15 +47,83 @@
           required
         />
 
-        <label for="address"><b>Address</b></label>
+
+        <label for="address"><b>Gender</b></label>
         <input
-          type="text"
-          placeholder="Enter Address"
-          name="address"
-          id="address"
+          list="genders"
+          placeholder="Select a gender"
+          name="gener"
+          id="gender"
           required
         />
+
+        <datalist id="genders">
+          <option value="Male"></option>
+          <option value="Female"></option>
+          <option value="Prefer not to say"></option>
+        </datalist>
+
+
+      
+        <label for="country"><b>Country</b></label>
+        <input
+          list="countries"
+          placeholder="Select a supported country"
+          name="country"
+          id="country"
+          required
+        />
+
+        <datalist id="countries">
+          <option value="USA">
+          <option value="United Kingdom">
+          <option value="France">
+          <option value="Norway">
+          <option value="Germany">
+          <option value="Australia">  <option value="USA">
+          <option value="United Kingdom">
+          <option value="France">
+          <option value="Norway">
+          <option value="Germany">
+          <option value="Australia">  <option value="USA">
+          <option value="United Kingdom">
+          <option value="France">
+          <option value="Norway">
+          <option value="Germany">
+          <option value="Australia">  <option value="USA">
+          <option value="United Kingdom">
+          <option value="France">
+          <option value="Norway">
+          <option value="Germany">
+          <option value="Australia">  <option value="USA">
+          <option value="United Kingdom">
+          <option value="France">
+          <option value="Norway">
+          <option value="Germany">
+          <option value="Australia">  <option value="USA">
+          <option value="United Kingdom">
+          <option value="France">
+          <option value="Norway">
+          <option value="Germany">
+          <option value="Australia">
+            <option value="Greece">
+        </datalist>
+        
+      <label for="address"><b>Address</b></label>
+      <input
+        type="text"
+        placeholder="Enter Address"
+        name="address"
+        id="address"
+        required
+      />
+
+
       </fieldset>
+
+
+
+
 
       <fieldset>
         <legend>Contact Info</legend>
@@ -67,6 +135,7 @@
           placeholder="Enter Email"
           name="email"
           id="email"
+          autocomplete="email"
           required
         />
 
@@ -76,6 +145,7 @@
           placeholder="Enter Phone Number"
           name="mobile"
           id="mobile"
+          autocomplete="mobile"
           required
         />
       </fieldset>
@@ -159,6 +229,11 @@
           <img id="paypal_icon" src="/res/paypal.png" />
           <p>Log in with PayPal</p>
         </div>
+      </fieldset>
+
+
+      <fieldset>
+        
       </fieldset>
       <hr />
 
