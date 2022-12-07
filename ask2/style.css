@@ -1,0 +1,549 @@
+body {
+  margin: 0;
+  background-image: url(/res/bg.gif);
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  /* equal to footer height */
+}
+
+html{
+  height: 100%;
+}
+
+header {
+  padding-bottom: 50px;
+  background-color: black;
+  overflow: visible;
+}
+
+.text-center {
+  height: 1000px;
+}
+
+.black_header {
+  text-shadow: 5px 3px #ffffff, 10px 8px #ff0000, 15px 13px rgb(0, 217, 255);
+  color: #000000;
+}
+
+#logo {
+  padding: 50px 0;
+  width: 6rem;
+  height: 6rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#f_logo {
+  width: 6rem;
+  height: 6rem;
+  align-self: center;
+}
+
+#bg {
+  filter: brightness(50%);
+  display: block;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1800px;
+  height: 1000px;
+  border-radius: 60px;
+}
+
+h2 a {
+  text-decoration: none;
+  color: white;
+}
+.white_header {
+  color: rgb(255, 255, 255);
+  text-shadow: 5px 3px #000000, 10px 8px #ff0000, 15px 13px rgb(0, 217, 255);
+}
+
+h1 {
+  font-family: Fugaz;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 100px;
+  margin: 6rem 0rem;
+}
+
+.category {
+  margin: 6rem 10%;
+}
+
+.cat_images div h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.cat_images {
+  background-color: white;
+  box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
+  /* border:4px solid black; */
+  border-radius: 70px;
+}
+
+.cat_images div {
+  padding: 15px;
+  background-color: white;
+  border-radius: 70px;
+  height: fit-content;
+  text-align: center;
+}
+
+.cat_images > div:hover {
+  transform: scale(1.1);
+}
+
+.product_card {
+  transform: scale(0.8);
+  background-color: white;
+  box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
+  width: 400px;
+  height: auto;
+  text-align: center;
+  border-radius: 50px;
+  padding: 50px 20px;
+}
+
+.product_card:hover {
+  transform: scale(0.85);
+  cursor: pointer;
+}
+
+.card_description {
+  height: 40px;
+}
+
+.card_description img {
+  height: 100%;
+}
+
+.card_image img {
+  height: 100%;
+}
+
+.card_image {
+  align-self: center;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+
+.rating_number {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.star {
+  width: 100%;
+}
+
+.rating_img {
+  width: 150px;
+}
+
+.cat_img_div img {
+  width: 100%;
+}
+
+.cat_img_div {
+  width: 200px;
+  align-self: center;
+}
+
+.product_code_p {
+  font-size: 14px;
+}
+
+.category_title {
+  font-family: Fugaz, cursive;
+  font-size: 4rem;
+  margin-left: 50px;
+  text-shadow: 5px 3px #ffffff, 10px 8px #ff0000, 15px 13px rgb(0, 217, 255);
+}
+
+.category_name {
+  font-family: Fugaz, cursive;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  font-size: 2rem;
+  text-shadow: 1px 3px #f5f5f5, 3px 6px #ff0000, 6px 10px rgb(0, 217, 255);
+}
+
+.container {
+  margin: 200px;
+}
+
+.contact_form{
+  padding: 70px;
+  background-color: white;
+  margin: 8rem 10%;
+  box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
+  /* border:4px solid black; */
+  border-radius: 70px;
+
+}
+
+
+.contact_form >div >div{
+  width: 100%;
+
+  
+}
+
+
+.contact_form h1{
+  margin-bottom: 70px;
+}
+textarea{
+  border-radius: 50px;
+  padding: 50px;
+}
+
+#contact_button{
+  font-family: Fugaz, cursive;
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  margin: 90px 0 20px 0;
+  align-self: center;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  width: 25%;
+  opacity: 0.9;
+}
+
+.container img {
+  width: 400px;
+  height: 400px;
+  margin-left: 100px;
+  overflow: hidden;
+}
+
+.container h1 {
+  font-family: Fugaz, cursive;
+  color: black;
+  font-size: 90px;
+  margin-right: 100px;
+  margin-top: 200px;
+  float: right;
+  overflow: hidden;
+}
+
+.about_par {
+  padding: 50px 80px;
+  word-break: break-all;
+  font-family: Rajdhani, cursive;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 25px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  padding: 0px 100px;
+  background-color: transparent;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  margin: 0 75px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: Fugaz, cursive;
+  font-size: 1.6rem;
+  border-radius: 30px;
+}
+
+.current {
+  color: black;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.contact_card {
+  text-align: center;
+  background-color: white;
+  margin: 12rem 20%;
+  box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
+  /* border:4px solid black; */
+  border-radius: 70px;
+}
+
+.product_detailed_card {
+  background-color: white;
+  margin: 0rem 10%;
+  box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
+  /* border:4px solid black; */
+  border-radius: 70px;
+  padding: 50px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.product_main_grid {
+  padding: 100px 0px;
+  margin: 6rem;
+}
+
+#product_detailed_title {
+  margin: 0;
+  font-size: 3rem;
+  font-family: Fugaz, cursive;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 3px #f5f5f5, 3px 6px #ff0000, 6px 10px rgb(0, 217, 255);
+  text-align: left;
+}
+
+#product_code {
+  text-align: left;
+}
+
+#product_detailed_price h1 {
+  color: rgb(0, 0, 0);
+  font-size: 4rem;
+  text-align: right;
+  text-shadow: 1px 3px #f5f5f5, 3px 6px #ff0000, 6px 10px rgb(0, 217, 255);
+  margin: 0;
+}
+
+#rating_detailed_number {
+  margin-right: 10px;
+  font-family: Fugaz, cursive;
+}
+
+.code_and_stars img {
+  max-width: 200px;
+}
+
+.small_preview_text p {
+  font-family: Rajdhani, sans-serif;
+  font-size: 1rem;
+}
+
+.small_preview_text {
+  margin-bottom: 30px;
+}
+
+.small_preview_title h2 {
+  margin: 30px 0px 0px 0px;
+}
+
+
+a {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: Fugaz, cursive;
+}
+
+.page_nav {
+  text-align: center;
+  border-radius: 50px;
+  margin: 40px 40px;
+  padding: 0px 10px;
+}
+
+#product_detailed_price {
+  margin-left: auto;
+}
+
+
+#product_detailed_image {
+  height: 100%;
+  width: auto;
+  margin: 0px;
+}
+
+#product_image_detailed {
+  height: 700px;
+}
+
+#profile {
+  background-color: rgb(53, 53, 53);
+  height: 300px;
+  width: 300px;
+  margin-top: -150px;
+  border-radius: 100%;
+}
+
+h2 {
+  font-family: Fugaz, cursive;
+}
+
+.price_h2 {
+  font-size: 40px;
+  text-shadow: 2px 3px #ffffff, 5px 6px #ff0000, 8px 9px rgb(0, 217, 255);
+}
+
+#footer {
+  margin-top: 200px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 200px; /* Height of the footer */
+  background: rgb(0, 0, 0);
+
+}
+
+.footer_logo {
+  align-self: center;
+}
+
+.footer_right {
+  font-family: Fugaz, cursive;
+  color: white;
+  text-align: left;
+  align-self: center;
+}
+
+.footer_right img {
+  margin: 10px;
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer_left {
+  font-family: Fugaz, cursive;
+  color: white;
+  text-align: right;
+}
+
+
+#back_button {
+  font-family: Fugaz, cursive;
+  background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 60px;
+  font-size: 2vw;
+  color: white;
+  height: 1rem;
+  width: 2rem;
+  justify-self: center;
+  align-self: center;
+  line-height: 4rem;
+}
+
+#buy_button {
+  font-family: Fugaz, cursive;
+  background-color: #358657; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 60px;
+  font-size: 2rem;
+  color: white;
+
+  justify-self: center;
+  align-self: center;
+  line-height: 4rem;
+}
+
+#buy_button:hover {
+  font-family: Fugaz, cursive;
+  background-color: #174229; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 60px;
+  font-size: 1.9rem;
+  color: white;
+  justify-self: center;
+  align-self: center;
+  line-height: 4rem;
+}
+
+.info_img {
+  width: 400px;
+  height: 400px;
+  border-radius: 40px;
+}
+.info_image_div {
+  align-self: center;
+}
+
+.info_h2 {
+  margin: 0;
+}
+
+
+.image_bottom_info img {
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+}
+
+.product_info_grid {
+
+
+  background-color: white;
+  margin: 0rem 12rem;
+  box-shadow: 10px 14px 100px -30px rgb(122, 122, 122);
+  /* border:4px solid black; */
+  border-radius: 70px;
+  padding: 80px;
+}
+
+p {
+  font-family: Rajdhani, sans-serif;
+  font-size: 1.2rem;
+}
+
+.info_main_header {
+  margin: 0;
+}
+
+
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+
+
+@font-face {
+  font-family: Fugaz;
+  src: url(/res/FugazOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: Rajdhani;
+  src: url(/res/Rajdhani-Regular.ttf);
+}
+
